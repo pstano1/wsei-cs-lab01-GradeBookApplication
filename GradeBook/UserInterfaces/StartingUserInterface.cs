@@ -79,16 +79,13 @@ namespace GradeBook.UserInterfaces
 
         public static void HelpCommand()
         {
-            Console.WriteLine();
-            Console.WriteLine("GradeBook accepts the following commands:");
-            Console.WriteLine();
-            Console.WriteLine("Create 'Name' 'Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use.");
-            Console.WriteLine();
-            Console.WriteLine("Load 'Name' - Loads the gradebook with the provided 'Name'.");
-            Console.WriteLine();
-            Console.WriteLine("Help - Displays all accepted commands.");
-            Console.WriteLine();
-            Console.WriteLine("Quit - Exits the application");
+            Console.WriteLine("Available commands:");
+            Console.WriteLine("\tcreate 'Name' 'Type' 'Weighted' - Creates a new gradebook where 'Name' is the name of the gradebook, 'Type' is what type of grading it should use, and 'Weighted' is whether or not grades should be weighted (true or false).");
+            Console.WriteLine("\tadd 'Name' 'Grade' - Adds a grade between 0.0 and 100.0 to the gradebook with the name 'Name'.");
+            Console.WriteLine("\tremove 'Name' 'Grade' - Removes a grade between 0.0 and 100.0 from the gradebook with the name 'Name'.");
+            Console.WriteLine("\tstats 'Name' - Computes statistics for the gradebook with the name 'Name'.");
+            Console.WriteLine("\thelp - Displays available commands.");
+            Console.WriteLine("\tquit - Exits the program.");
         }
     }
 }
